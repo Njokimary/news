@@ -1,10 +1,22 @@
+// import 'dotenv/config'
+// require('dotenv').config();
+// import dotenv from './node_modules/dotenv';
+// import 'dotenv/config'
+// dotenv.config();
+import { config } from './config.js';
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
-    const API_KEY = "55c6498d47dc42e58594ea740046d649";
+    const apiKey =config.ApiKey;
+    // const apiKey = process.env.API_KEY
     const url = "https://newsapi.org/v2/everything?q=";
+    // console.log(apiKey);
   
     async function fetchData(query) {
       try {
-        const res = await fetch(`${url}${query}&apiKey=55c6498d47dc42e58594ea740046d649`);
+        const res = await fetch(`${url}${query}&apiKey=${apiKey}`);
         const data = await res.json();
         return data;
       } catch (error) {
