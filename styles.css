@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    height: 50px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background: #f5f6f9;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    justify-content: space-between;
+    box-shadow: 0px 3px 10px 0 rgba(80, 119, 242, 0.3);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #4361ee;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.desktop nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.desktop nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.desktop nav ul li {
+    cursor: pointer;
+}
+
+.desktop nav ul li:hover {
+    color: #4361ee;
+}
+
+/* Styling for the desktop and mobile search bar */
+.InputSearch {
+    height: 40px;
+    width: 95%;
+    max-width: 400px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.InputSearch input {
+    flex: 1;
+    height: 100%;
+    padding: 0px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.InputSearch span {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.InputSearch span i {
+    margin-top: 2px;
+}
+
+.InputSearch span:hover {
+    background-color: #e1e1e1;
+}
+
+.mobile {
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    max-width: 700px;
+    background-color: #f5f6f9;
+    height: calc(100% - 150px);
+    padding: 10px;
+    display: none;
+}
+
+.mobile nav,
+.mobile nav ul {
+    flex-direction: column;
+}
+
+/* Styling for the mobile search bar */
+.mobile .InputSearch {
+    height: 35px;
+    width: 95%;
+    max-width: 400px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.mobile .InputSearch input {
+    flex: 1;
+    height: 100%;
+    padding: 0px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.mobile .InputSearch span {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.mobile .InputSearch span i {
+    margin-top: 2px;
+}
+
+.mobile .InputSearch span:hover {
+    background-color: #e1e1e1;
+}
+
+.hidden {
+    display: none;
+}
+
+@media all and (max-width: 700px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+/** CSS for cards **/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 10px;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(33.33% - 25px);
+    box-shadow: 7px 7px 25px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    background: #ffffff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 210px;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card h4,
+.card div {
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.publishbyDate {
+    display: flex;
+}
+
+.publishbyDate p {
+    margin: 0;
+    font-size: 14px;
+    align-items: center;
+    color: #a5a1a1;
+}
+
+.publishbyDate span {
+    padding: 0px 10px;
+}
+
+.desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin: 0;
+}
+
+@media all and (min-width: 700px) {
+    main {
+        padding: 20px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card h4,
+    .card div {
+        padding: 5px 15px;
+    }
+}
