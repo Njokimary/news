@@ -6,5 +6,5 @@ const config = {
     ApiKey: "55c6498d47dc42e58594ea740046d649"
   };
   
-  export { config };
-  
+  // export { config };
+  module.export
