@@ -2,3 +2,6 @@ config.js
 .env
 node_modules
 news.js
+dist
+.vscode
+.cache

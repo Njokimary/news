@@ -1,5 +1,5 @@
 // import 'dotenv/config'
-// require('dotenv').config();
+require('dotenv').config();
 // import dotenv from './node_modules/dotenv';
 // import 'dotenv/config'
 // dotenv.config();
@@ -10,8 +10,8 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const apiKey =config.ApiKey;
-    // const apiKey = process.env.API_KEY
+    // const apiKey =config.ApiKey;
+    const apiKey = process.env.API_KEY
     const url = "https://newsapi.org/v2/everything?q=";
     // console.log(apiKey);
   
