@@ -8,7 +8,6 @@
 
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const apiKey =config.ApiKey;
     // const apiKey = process.env.API_KEY
