@@ -5,7 +5,8 @@
 // dotenv.config();
 
 // import { config } from './config.js';
-
+// import config from './news.js';
+// echo -e "const config = {ApiKey: '55c6498d47dc42e58594ea740046d649'};\nmodule.exports = config;" > news.js
 
 
 document.addEventListener("DOMContentLoaded", function () {
