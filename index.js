@@ -12,8 +12,9 @@ require('dotenv').config();
 document.addEventListener("DOMContentLoaded", function () {
     // const apiKey =config.ApiKey;
     const apiKey = process.env.API_KEY
-    const url = "https://newsapi.org/v2/everything?q=";
+    const url = "//newsapi.org/v2/everything?q=";
     // console.log(apiKey);
+    
   
     async function fetchData(query) {
       try {
